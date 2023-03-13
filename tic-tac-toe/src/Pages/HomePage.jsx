@@ -1,19 +1,53 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Modal from 'react-modal';
+import Swal from 'sweetalert2';
+import Cookies from 'js-cookie';
+
 import "./HomePage.css";
+import { createRandomCookie } from "../Cookies/CreateCookie";
+import { getDataFromLocalstorage, setdataToLocalStirage } from "../LocalStorage.js/LocalStorage";
 
 export default function HomePage() {
-  const [name, setName] = useState("");
+  const [name, setName] = useState(getDataFromLocalstorage("Soumya-myApp-tic-tac-toe-name")||"");
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  let navigate=useNavigate();
 
-  function handleInputChange(event) {
-    setName(event.target.value);
+
+  useEffect(() => {
+    const cookieValue = Cookies.get('myCookie-for-tic-tac-toe');
+    (cookieValue)? console.log(cookieValue):setCookies()  
+  }, []);
+
+  function setCookies(){
+    let newcookie=createRandomCookie()
+    Cookies.set('myCookie-for-tic-tac-toe', newcookie, { expires: 7, path: '/', secure: true });
   }
-
+ 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(`Welcome, ${name}!`);
+   if(name){
+    setdataToLocalStirage("Soumya-myApp-tic-tac-toe-name",name)
+    navigate("/play");
+
+   }else{
+    Swal.fire({
+      title: "Are you Entered your Name?",
+      text: `For proceeding you have to Enter your name!`,
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+      customClass: {
+        container: 'my-swal-container',
+        title: 'my-swal-title',
+        content: 'my-swal-content',
+        confirmButton: 'my-swal-confirm-button',
+        cancelButton: 'my-swal-cancel-button',
+        actions: 'my-swal-actions'
+      },
+    })
+
+   }
   }
 
   return (
@@ -46,9 +80,9 @@ export default function HomePage() {
             type="text"
             id="name"
             value={name}
-            onChange={handleInputChange}
+            onChange={(event)=>setName(event.target.value)}
           />
-          <button type="submit">Lets Start</button>
+          <button type="submit" >Lets Start</button>
         </form>
       </div>
     </>

@@ -9,10 +9,10 @@ body {
     width: 40%;
 	background-color: #fff;
     border-radius: 1.7rem;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	margin: 100px auto;
-	max-width: 500px;
-	padding: 30px;
+	box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.2);
+	margin: 6.25rem auto;
+	max-width: 31.25rem;
+	padding: 1.875rem;
 	text-align: center;
 }
 
@@ -22,34 +22,34 @@ h1 {
 }
 
 form {
-	margin-top: 30px;
+	margin-top: 1.875rem;
 }
 
 label {
 	display: block;
-	font-size: 18px;
-	margin-bottom: 10px;
+	font-size: 1.125rem;
+	margin-bottom: .625rem;
 }
 
 input[type="text"] {
 	border: none;
-	border-radius: 5px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-	font-size: 18px;
-	padding: 10px;
+	border-radius: .3125rem;
+	box-shadow: 0 0 .3125rem rgba(0, 0, 0, 0.2);
+	font-size: 1.125rem;
+	padding: .625rem;
 	width: 90%;
 }
 
 button[type="submit"] {
 	background-color: #007bff;
 	border: none;
-	border-radius: 5px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	border-radius: .3125rem;
+	box-shadow: 0 0 .3125rem rgba(0, 0, 0, 0.2);
 	color: #fff;
 	cursor: pointer;
-	font-size: 18px;
-	margin-top: 20px;
-	padding: 10px 20px;
+	font-size: 1.125rem;
+	margin-top: 1.25rem;
+	padding: .625rem 1.25rem;
 	transition: background-color 0.3s ease;
 	width: 90%;
 }
@@ -57,19 +57,22 @@ button[type="submit"] {
 button[type="submit"]:hover {
 	background-color: #0062cc;
 }
+
 .Modal {
     position: absolute;
     height: 20rem;
-    overflow-y: scroll;
-    
-    width: 30%;
+    overflow-y: scroll; 
+    width: 40%;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(230, 216, 216);
-    padding: 20px;
-    border-radius: 1.7rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 1.25rem;
+    border-radius:1.7rem;
+    box-shadow: 0rem 0rem .625rem rgba(0, 0, 0, 0.5);
+  }
+  .Modal::-webkit-scrollbar {
+	display: none; 
   }
 
   input[type="ok"] {
@@ -77,12 +80,74 @@ button[type="submit"]:hover {
     width: 1.3rem;
     background-color: rgb(41, 207, 41);
     color:  rgb(249, 223, 223);
-    padding: 10px 20px;
+    padding: .625rem 1.25rem;
     border: none;
-    border-radius: 5px;
+    border-radius: .3125rem;
     cursor: pointer;
   }
   
   input[type="ok"]:hover {
     background-color: rgb(190, 242, 190);
   }
+
+  .my-swal-container {
+	width: 37.5rem ;
+	height: 25rem ;
+	margin: auto;
+  }
+  
+  .my-swal-title {
+	font-size: 1.5rem;
+  }
+  
+  .my-swal-content {
+	font-size: 1rem;
+  }
+  
+  .my-swal-confirm-button {
+	background-color: #d7e7f6;
+	color: #FFFFFF;
+  }
+  
+  .my-swal-cancel-button {
+	background-color: #DC143C;
+	color: #FFFFFF;
+  }
+  
+  .my-swal-actions {
+	margin-top: 1.25rem;
+  }
+  
+
+  
+
+  @media (min-width: 0px) and (max-width: 375px) {
+	.Modal {
+		width: 50%;
+    }
+	.container {
+		width: 60%;
+		background-color: #b27c7c;
+	}
+	.my-swal-container {
+		width: 80% ;
+		height: 60% ;
+	  }
+  
+  }  
+  @media (min-width: 375px) and (max-width: 1024px) {
+	.Modal {
+		width: 50%;
+    }
+	.container {
+		width: 55%;
+		background-color: #caa6a6;
+	}
+	.my-swal-container {
+		width: 70% ;
+		height: 60% ;
+	  }
+  
+  } 
+  
+  
