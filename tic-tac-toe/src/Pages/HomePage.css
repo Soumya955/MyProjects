@@ -14,10 +14,11 @@ body {
 	max-width: 31.25rem;
 	padding: 1.875rem;
 	text-align: center;
-	transition: width 2s;
+	transition: width 2s, transform 2s;
 }
 .container:hover{
-	width:40%
+	width:80%;
+	/* transform: rotate(360deg); */
 }
 
 h1 {
@@ -144,6 +145,10 @@ button[type="submit"]:hover {
 	.my-swal-container {
 		width: 80% ;
 		height: 60% ;
+	}
+	button[type="submit"] {
+		width: 90%;
+		transition: width 2s;
 	}
   
   }  
