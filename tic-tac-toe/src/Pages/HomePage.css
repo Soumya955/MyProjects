@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    width: 40%;
+    width: 30%;
 	background-color: #fff;
     border-radius: 1.7rem;
 	box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.2);
@@ -14,6 +14,10 @@ body {
 	max-width: 31.25rem;
 	padding: 1.875rem;
 	text-align: center;
+	transition: width 2s;
+}
+.container:hover{
+	width:40%
 }
 
 h1 {
@@ -37,10 +41,16 @@ input[type="text"] {
 	box-shadow: 0 0 .3125rem rgba(0, 0, 0, 0.2);
 	font-size: 1.125rem;
 	padding: .625rem;
-	width: 90%;
+	width: 40%;
+	transition: width 2s;
+}
+input[type="text"]:focus{
+width: 90%;
 }
 
 button[type="submit"] {
+	display: block;
+	margin: auto;
 	background-color: #007bff;
 	border: none;
 	border-radius: .3125rem;
@@ -51,11 +61,13 @@ button[type="submit"] {
 	margin-top: 1.25rem;
 	padding: .625rem 1.25rem;
 	transition: background-color 0.3s ease;
-	width: 90%;
+	width: 40%;
+	transition: width 2s;
 }
 
 button[type="submit"]:hover {
-	background-color: #0062cc;
+	background-color: #022c58;
+	width: 90%;
 }
 
 .Modal {
@@ -132,7 +144,7 @@ button[type="submit"]:hover {
 	.my-swal-container {
 		width: 80% ;
 		height: 60% ;
-	  }
+	}
   
   }  
   @media (min-width: 375px) and (max-width: 1024px) {

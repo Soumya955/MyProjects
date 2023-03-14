@@ -49,6 +49,14 @@
         margin-top: 20%;
       }
       
+      .container {
+		width: 60%;
+		background-color: #b27c7c;
+	}
+	.my-swal-container {
+		width: 80% ;
+		height: 60% ;
+	  }
   }  
   @media (min-width: 375px) and (max-width: 1024px) {
 	
