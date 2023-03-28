@@ -32,6 +32,7 @@ export default function HomePage() {
 
    }else{
     Swal.fire({
+      
       title: "Are you Entered your Name?",
       text: `For proceeding you have to Enter your name!`,
       icon: "warning",
