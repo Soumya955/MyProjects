@@ -1,5 +1,6 @@
 
 
+
 export function winner(data){
     if(data[0]===data[1]&&data[1]===data[2]&&data[0]!==""){
         return data[0]
