@@ -165,7 +165,7 @@ if(!data[n]){
     <div className="box" onClick={()=>handleClick(8)}>{data[8]}</div>
   </div>
 </div>
-
+    <p>love from Soumyaranjan</p>
     </>
   )
 }
