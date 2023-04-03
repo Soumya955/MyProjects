@@ -4,6 +4,9 @@ import Swal from 'sweetalert2';
 import { getDataFromLocalstorage, setdataToLocalStirage } from '../LocalStorage.js/LocalStorage'
 import { winner } from '../Winner/Winner';
 import "./PlayPage.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+
 
 
 function findRandomIndex(){
@@ -165,7 +168,7 @@ if(!data[n]){
     <div className="box" onClick={()=>handleClick(8)}>{data[8]}</div>
   </div>
 </div>
-    <p>love from Soumyaranjan</p>
+    <p><FontAwesomeIcon icon={faHeart} style={{color:'red'}} /> from SoumyaRB</p>
     </>
   )
 }
