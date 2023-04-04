@@ -2,8 +2,9 @@ export function createRandomCookie() {
     const alphabet = 'abcdefghijklmnopqrstuvwxyz0123456789';
     let cookieValue = '';
   
-    
 
+
+    
 
 
     // Generate a random string of 16 characters
