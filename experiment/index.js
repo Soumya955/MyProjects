@@ -1,4 +1,4 @@
-// console.log(x)
+//console.log(x)
 //const x=2;
 a()
 b()
@@ -8,7 +8,10 @@ function a(){
      const x=10;
     const y=23
     const ab=()=>{
-        console.log("hello",x)
+        sr()
+        function sr(){
+            console.log("hello",x)
+        }
     }
     // console.log(x)
     c()
