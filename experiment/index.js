@@ -1,21 +1,21 @@
 // console.log(x)
-const x=2;
+//const x=2;
 a()
 b()
 console.log(x)
 function a(){
-    console.log(x)
-    // const x=10;
+    // console.log(x)
+     const x=10;
     const y=23
     const ab=()=>{
-        console.log("hello")
+        console.log("hello",x)
     }
-    console.log(x)
+    // console.log(x)
     c()
     function c(){
-        const x=1000;
+        // const x=1000;
         ab()
-        console.log(x,y)
+        //console.log(x,y)
     }
 }
 function b(){
