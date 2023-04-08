@@ -35,4 +35,7 @@ let sum=(a)=>{
       }
     }
 }
-console.log(sum(2)(3)(5)())
+
+
+let sm=a=>b=>b?sum(a+b):a;
+console.log(sm(2)(3)(5)())
