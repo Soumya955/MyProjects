@@ -39,3 +39,14 @@
 
 // let sm=a=>b=>b?sum(a+b):a;
 // console.log(sm(2)(3)(5)())
+
+
+
+var a=10
+if(a){
+  var b=100
+  if(b){
+    var c=1000
+  }
+}
+console.log(a,b,c)
