@@ -26,16 +26,16 @@
 //     console.log(x)
 // }
 
-let sum=(a)=>{
-    return (b)=>{
-      if(b){
-        return sum(a+b);
-      }else{
-        return a
-      }
-    }
-}
+// let sum=(a)=>{
+//     return (b)=>{
+//       if(b){
+//         return sum(a+b);
+//       }else{
+//         return a
+//       }
+//     }
+// }
 
 
-let sm=a=>b=>b?sum(a+b):a;
-console.log(sm(2)(3)(5)())
+// let sm=a=>b=>b?sum(a+b):a;
+// console.log(sm(2)(3)(5)())
