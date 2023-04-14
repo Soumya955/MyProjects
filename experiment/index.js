@@ -43,10 +43,10 @@
 
 
 var a=10
-if(a){
+function f1(a){
   var b=100
   if(b){
     var c=1000
   }
+  console.log(a,b,c)
 }
-console.log(a,b,c)
