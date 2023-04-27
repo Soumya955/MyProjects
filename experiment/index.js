@@ -42,11 +42,26 @@
 
 
 
-var a=10
-function f1(a){
-  var b=100
-  if(b){
-    var c=1000
+// var a=10
+// function f1(a){
+//   var b=100
+//   if(b){
+//     var c=1000
+//   }
+//   console.log(a,b,c)
+// }
+
+
+let note=1255;
+let coins=[10,5,3,2,1];
+let how_many_min_coins={}
+
+for(let i=0;i<coins.length;i++){
+  if(note>=1){
+    how_many_min_coins[coins[i]]=Math.floor(note/coins[i])
+   note=(note%coins[i]);
+  }else{
+    break;
   }
-  console.log(a,b,c)
 }
+console.log(how_many_min_coins,"ok")
