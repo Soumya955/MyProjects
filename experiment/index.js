@@ -109,16 +109,35 @@
 //   }
 // }
 // triangle(5);
-
-
-// function Soumya(name,roll){
-//   return {
-//     name,
-//     roll
-//   }
-// }
-// let nm=new Soumya("srb",10)
-
-
-
-// console.log(nm)
+function ok(N,M,arr,bobI,bobJ,shopI,shopJ){
+console.log(N,M,arr,bobI,bobJ,shopI,shopJ,"ok")
+    console.log(fn(N,M,0,[],arr,bobI,bobJ,shopI,shopJ))
+    
+    function fn(N,M,path,arr1,arr,bobI,bobJ,shopI,shopJ){
+        if(bobI<0||bobI>=N||bobJ<0||bobJ>=M){
+            return [];
+        }
+        //console.log(bobI,bobJ)
+        if(arr[bobI][bobJ]==0){
+            return [];
+        }
+        if(bobI==shopI&&bobJ==shopJ){
+            return [path];
+        }
+    
+        let a1=fn(N,M,path+1,arr1,arr,bobI+1,bobJ,shopI,shopJ);
+        let a2=fn(N,M,path+1,arr1,arr,bobI-1,bobJ,shopI,shopJ);
+        let a3=fn(N,M,path+1,arr1,arr,bobI,bobJ+1,shopI,shopJ);
+        let a4=fn(N,M,path+1,arr1,arr,bobI,bobJ-1,shopI,shopJ);
+        arr1=[...arr1,...a1,...a2,...a3,...a4];
+    
+        return arr1
+    }
+     
+    }
+   ok(3,10,
+    [[1,1 ,1 ,1 ,1 ,1, 1, 1 ,1, 1],
+    [1 ,1, 0 ,1 ,1, 0, 1 ,1, 0, 1],
+    [1 ,1, 1 ,1 ,1, 1 ,1, 1 ,1 ,1]],
+    0, 0,
+    1, 7)
