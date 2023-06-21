@@ -109,6 +109,7 @@
 //   }
 // }
 // triangle(5);
+
 // function ok(N,M,arr,bobI,bobJ,shopI,shopJ){
 // console.log(N,M,arr,bobI,bobJ,shopI,shopJ,"ok")
 //     console.log(fn(N,M,0,[],arr,bobI,bobJ,shopI,shopJ))
