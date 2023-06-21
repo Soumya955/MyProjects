@@ -138,6 +138,7 @@ console.log(N,M,arr,bobI,bobJ,shopI,shopJ,"ok")
 
     
 
+    
    ok(3,10,
     [[1,1 ,1 ,1 ,1 ,1, 1, 1 ,1, 1],
     [1 ,1, 0 ,1 ,1, 0, 1 ,1, 0, 1],
