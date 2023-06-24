@@ -165,6 +165,8 @@ function ok(len,arr){
     //       }
     //     }
     // }
+
+    
     console.log(fn([...arr],1,3))
     
     function fn(arr,i,j){
