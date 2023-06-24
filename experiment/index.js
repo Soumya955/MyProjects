@@ -165,10 +165,8 @@ function ok(len,arr){
     //       }
     //     }
     // }
-    
    
     console.log(fn([...arr],1,3))
-    
     
     function fn(arr,i,j){
         if(i<0||j<0||i>=arr.length||j>=arr[0].length){
