@@ -1,8 +1,12 @@
-// //console.log(x)
-// //const x=2;
-// a()
-// b()
-// console.log(x)
+
+const x=2;
+
+
+console.log(x)
+console.log(x)
+console.log(x)
+console.log(x)
+console.log(x)
 // function a(){
 //     // console.log(x)
 //      const x=10;
@@ -152,39 +156,39 @@
 
 
 
-function ok(len,arr){
+// function ok(len,arr){
 
 
-    let ans=0;
-    // for(let i=0;i<arr.length;i++){
-    //     for(let j=0;j<arr[0].length;j++){
-    //       let a= fn(arr,i,j) 
-    //       console.log(a,i,j,arr)
-    //       if(a>ans){
-    //           ans=a
-    //       }
-    //     }
-    // }
+//     let ans=0;
+//     // for(let i=0;i<arr.length;i++){
+//     //     for(let j=0;j<arr[0].length;j++){
+//     //       let a= fn(arr,i,j) 
+//     //       console.log(a,i,j,arr)
+//     //       if(a>ans){
+//     //           ans=a
+//     //       }
+//     //     }
+//     // }
 
     
-    console.log(fn([...arr],1,3))
+//     console.log(fn([...arr],1,3))
     
-    function fn(arr,i,j){
-        if(i<0||j<0||i>=arr.length||j>=arr[0].length){
-            return 0;
-        }
-        if(arr[i][j]=="W"){
-            return 0
-        }
+//     function fn(arr,i,j){
+//         if(i<0||j<0||i>=arr.length||j>=arr[0].length){
+//             return 0;
+//         }
+//         if(arr[i][j]=="W"){
+//             return 0
+//         }
         
-        arr[i][j]="W";
-        console.log(i,j,arr[i][j],arr)
-        let o=fn(arr,i+1,j)+fn(arr,i-1,j)+fn(arr,i,j+1)+fn(arr,i,j-1);
-        return o+1;
-    }
+//         arr[i][j]="W";
+//         console.log(i,j,arr[i][j],arr)
+//         let o=fn(arr,i+1,j)+fn(arr,i-1,j)+fn(arr,i,j+1)+fn(arr,i,j-1);
+//         return o+1;
+//     }
      
-    }
-    ok( 5,[["T","T","T","W","W"],["T","W","W","T","T"], ["T","W","W","T","T"],["T","W","T","T","T"],["W","W","T","T","T"]])
+//     }
+//     ok( 5,[["T","T","T","W","W"],["T","W","W","T","T"], ["T","W","W","T","T"],["T","W","T","T","T"],["W","W","T","T","T"]])
 
     
     
