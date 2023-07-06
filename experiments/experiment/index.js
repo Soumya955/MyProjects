@@ -1,15 +1,28 @@
 
 
-const x=2;
 
 
 
 
-console.log(x)
-console.log(x)
-console.log(x)
-console.log(x)
-console.log(x)
+
+var x = 10;
+
+(function () {
+    
+  console.log(x);
+   var x = 20;
+})();
+
+// const x=2;
+
+
+
+
+// console.log(x)
+// console.log(x)
+// console.log(x)
+// console.log(x)
+// console.log(x)
 // function a(){
 //     // console.log(x)
 //      const x=10;
