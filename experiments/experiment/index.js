@@ -3,4 +3,5 @@ if (function f() {}) {
   y += typeof f;
 }
 
+
 console.log(y);
