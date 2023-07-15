@@ -7,5 +7,4 @@ if (function f() {}) {
 
 
 
-
 console.log(y);
