@@ -1,10 +1,7 @@
-var y = 1;
-if (function f() {}) {
-  y += typeof(f);
-}
-
-
-
-
-
-console.log(y);
+const fetchData = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Data fetched successfully!');
+    }, 2000);
+  });
+};
