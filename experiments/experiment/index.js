@@ -13,7 +13,6 @@ function maximumPairSum(cards) {
   return maxSum;
 }
 
-
 // Example usage:
 const cards = [1, 4, 3, 2];
 const maxPairSum = maximumPairSum(cards);
