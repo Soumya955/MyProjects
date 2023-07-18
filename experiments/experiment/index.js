@@ -2,4 +2,4 @@
 
 
 
-console.log(NaN == NaN)
+console.log(undefined == undefined)
