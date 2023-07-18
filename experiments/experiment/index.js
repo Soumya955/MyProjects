@@ -1,7 +1,7 @@
 
 
-var array1 = [1, 2, 3];
-var array2 = [1, 2, 3];
+var array1 = [];
+var array2 = [];
 var areEqual = array1.toString() === array2.toString();
 console.log(areEqual); // true
 
