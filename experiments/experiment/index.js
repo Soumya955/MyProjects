@@ -2,4 +2,4 @@
 
 
 
-console.log(undefined == undefined)
+console.log(NaN === undefined)
