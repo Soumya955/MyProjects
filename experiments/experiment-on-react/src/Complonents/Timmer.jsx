@@ -4,7 +4,6 @@
    export default function Timmer() {
     const timmerid=useRef(null);
     const [time,settime]=useState("")
-    
 
     useEffect(()=>{
     if(timmerid.current)clearInterval(timmerid.current);
