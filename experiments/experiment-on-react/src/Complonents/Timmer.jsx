@@ -8,7 +8,6 @@
 
 
 
-
     useEffect(()=>{
     if(timmerid.current)clearInterval(timmerid.current);
     timmerid.current=setInterval(()=>{
