@@ -1,7 +1,9 @@
-function sumNumbers(a,b,...numbers) {
-   let c=numbers[0];
-    console.log(a,b,...c)
+let arr=[9,6,3];
+
+for(let i=0;i<arr.length;i++){
+let ans="";
+  for(j=0;j<arr[i];j++){
+   ans+=arr[i]
   }
-  
-  console.log(sumNumbers(1, 2, {a:3,b:4,c:5})); 
-  
+console.log(ans)
+}
