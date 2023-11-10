@@ -5,15 +5,15 @@ import { FaMicrophone, FaStop } from 'react-icons/fa';
 function AudioSearch(){
   const [transcript, setTranscript] = useState('');
   const [isListening, setIsListening] = useState(false);
+  const recognition = new window.webkitSpeechRecognition();
 
   const startListening = () => {
     setIsListening(true);
-    const recognition = new window.webkitSpeechRecognition();
 
-    recognition.onresult = (event) => {
-      console.log(event.results,'audio')
-      const currentTranscript = event.results[0][0].transcript;
-      setTranscript(currentTranscript);
+    recognition.onresult = (e) => {
+      console.log(e.results,'audio')
+      const currentTranscript = e.results[0][0].transcript;
+      setTranscript(e.results[0][0].transcript);
     };
 
     recognition.onend = () => {
@@ -25,6 +25,7 @@ function AudioSearch(){
 
   const stopListening = () => {
     setIsListening(false);
+    recognition.stop();
   };
 
   return (
@@ -37,7 +38,7 @@ function AudioSearch(){
           placeholder="Speak..."
           readOnly
         />
-        <button onClick={isListening ? stopListening : startListening}>
+        <button onClick={()=>{isListening ? stopListening() : startListening()}}>
           {isListening ? <FaStop /> : <FaMicrophone />}
         </button>
       </div>
