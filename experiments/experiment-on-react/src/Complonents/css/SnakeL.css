@@ -1,0 +1,15 @@
+.snake{
+    width: 60%;
+    display: grid;
+    gap:5px;
+    /* grid-template-rows: repeat(10px,10fr); */
+    grid-template-columns: repeat(10,1fr);
+}
+.even{
+    background-color: red;
+  
+}
+.odd{
+    background-color: white;
+
+}
