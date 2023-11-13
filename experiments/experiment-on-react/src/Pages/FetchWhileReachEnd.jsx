@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function FetchWhileReachEnd() {
+  const [message,setMessage] = useState('Scroll to see console log')
   useEffect(() => {
     const handleScroll = () => {
       // document.documentElement.scrollHeight   total height of page let it is 100.
@@ -11,6 +12,7 @@ export default function FetchWhileReachEnd() {
         document.documentElement.scrollHeight - window.innerHeight;
       if (window.scrollY >= scrollableHeight - 2) {
         console.log("User reached the bottom of the page!");
+        setMessage('We Reached the End')
       }
     };
 
@@ -25,17 +27,27 @@ export default function FetchWhileReachEnd() {
 
   return (
     <div>
-      <h1>Scroll to see console log</h1>
-      <h1>Scroll to see console log</h1>
-      <h1>Scroll to see console log</h1>
-      <h1>Scroll to see console log</h1>
-      <h1>Scroll to see console log</h1>
-      <h1>Scroll to see console log</h1>
-      <h1>Scroll to see console log</h1>
-      <h1>Scroll to see console log</h1>
-      <h1>Scroll to see console log</h1>
-      <h1>Scroll to see console log</h1>
-      <h1>Scroll to see console log</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
+      <h1>{message}</h1>
       {/* Add more content here */}
     </div>
   );

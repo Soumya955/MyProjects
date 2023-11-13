@@ -1,0 +1,28 @@
+.search-box{
+    position: relative;
+    width: 19.5rem;
+    margin: auto;
+}
+.search-box>input{
+    height: 2rem;
+    width: 15rem;
+}
+.search-box>input:focus {
+    outline: none; 
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+.search-box>button{
+    padding: 0.6rem;
+}  
+
+.search-bottom-box{
+    position: absolute;
+    width: 15rem;
+}
+.search-bottom-box>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 1.3rem;
+    padding: 0.4rem;
+    text-align: left;
+}

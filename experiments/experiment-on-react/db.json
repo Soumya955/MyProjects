@@ -1,0 +1,63 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users":[
+    {"id": 1, "name": "Alice Johnson"},
+    {"id": 2, "name": "Bob Smith"},
+    {"id": 3, "name": "Charlie Davis"},
+    {"id": 4, "name": "David Thompson"},
+    {"id": 5, "name": "Eva Miller"},
+    {"id": 6, "name": "Frank White"},
+    {"id": 7, "name": "Grace Wilson"},
+    {"id": 8, "name": "Henry Martinez"},
+    {"id": 9, "name": "Ivy Collins"},
+    {"id": 10, "name": "Jack Turner"},
+    {"id": 11, "name": "Karen Hill"},
+    {"id": 12, "name": "Larry Adams"},
+    {"id": 13, "name": "Mia Lopez"},
+    {"id": 14, "name": "Nathan Moore"},
+    {"id": 15, "name": "Olivia Taylor"},
+    {"id": 16, "name": "Peter Hall"},
+    {"id": 17, "name": "Quincy King"},
+    {"id": 18, "name": "Rita Scott"},
+    {"id": 19, "name": "Samuel Turner"},
+    {"id": 20, "name": "Tina Garcia"},
+    {"id": 21, "name": "Ursula Warren"},
+    {"id": 22, "name": "Victor Perry"},
+    {"id": 23, "name": "Wendy Nelson"},
+    {"id": 24, "name": "Xavier Carter"},
+    {"id": 25, "name": "Yvonne Scott"},
+    {"id": 26, "name": "Zane Mitchell"},
+    {"id": 27, "name": "Adrian Baker"},
+    {"id": 28, "name": "Beatrice Turner"},
+    {"id": 29, "name": "Caleb Young"},
+    {"id": 30, "name": "Daisy Thompson"},
+    {"id": 31, "name": "Edgar Martinez"},
+    {"id": 32, "name": "Fiona Adams"},
+    {"id": 33, "name": "George Turner"},
+    {"id": 34, "name": "Hazel Moore"},
+    {"id": 35, "name": "Ian Williams"},
+    {"id": 36, "name": "Jasmine Davis"},
+    {"id": 37, "name": "Kurtis Robinson"},
+    {"id": 38, "name": "Lila Thompson"},
+    {"id": 39, "name": "Milo Harris"},
+    {"id": 40, "name": "Nora Davis"},
+    {"id": 999, "name": "Zara Green"},
+    {"id": 1000, "name": "Aaron Mitchell"}
+  ]
+}
