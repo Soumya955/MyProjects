@@ -5,5 +5,6 @@ export function createRandomCookie() {
     for (let i = 0; i < 16; i++) {
       cookieValue += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
     } 
+    
     return `cookie_${Date.now()}_${cookieValue}`;
   }
