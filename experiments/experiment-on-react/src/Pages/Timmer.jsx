@@ -6,7 +6,7 @@
     const [time,settime]=useState("")
 
     useEffect(()=>{
-    if(timmerid.current)clearInterval(timmerid.current);
+     if(timmerid.current)clearInterval(timmerid.current);
     timmerid.current=setInterval(()=>{
         let date=new Date();
         settime(date.toString().split(" ")[4])

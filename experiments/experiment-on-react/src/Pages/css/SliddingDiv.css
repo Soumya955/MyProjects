@@ -1,0 +1,21 @@
+.slide-up {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    /* Starting position */
+    /* top: 200px; */
+    /* Define the animation */
+    animation: slideUp 1s forwards;
+  }
+  
+  /* Keyframes for the sliding animation */
+  @keyframes slideUp {
+    from {
+      top: 300px; /* Starting position */
+    }
+    to {
+      top: 100px; /* End position */
+    }
+  }
+  
