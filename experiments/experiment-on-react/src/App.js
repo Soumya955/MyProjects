@@ -1,4 +1,5 @@
 import './App.css';
+import UseCustomHooks from './Pages/Custom-hooks/UseCustomHooks';
 import Exp from './Pages/Exp';
 import FetchWhileReachEnd from './Pages/FetchWhileReachEnd';
 import Search from './Pages/Search';
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
     <Exp/>
+    <UseCustomHooks/>
     </div>
   );
 }
