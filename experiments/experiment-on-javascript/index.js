@@ -1,9 +1,8 @@
 const a=0.1;
 const b=0.2;
 const c=a+b;
-// kambal --
-// boot , moza ,inner
-// pant 1,shirt 2 formal
+// boot , moza ,inner ,mufler ;
+// shirt 1 formal
 // trolli bag 
 // hand bag 
 
