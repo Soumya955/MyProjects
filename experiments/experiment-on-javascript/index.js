@@ -8,7 +8,6 @@ const obj = {
 
   // Throws an error in strict mode
 
-  
   console.log(obj.prop);
   // Expected output: 42
   
