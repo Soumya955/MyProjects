@@ -1,10 +1,12 @@
-const a=0.1;
-const b=0.2;
-const c=a+b;
-// boot , moza ,inner ,mufler ;
-// shirt 1 formal
-// trolli bag 
-// hand bag 
-
-
-console.log(c)
+const obj = {
+    prop: 42,
+  };
+  
+  Object.freeze(obj);
+  
+  obj.prop = 33;
+  // Throws an error in strict mode
+  
+  console.log(obj.prop);
+  // Expected output: 42
+  
