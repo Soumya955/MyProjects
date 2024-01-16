@@ -1,7 +1,6 @@
 const obj = {
     prop: 42,
   };
-  
   Object.freeze(obj);
 
   
